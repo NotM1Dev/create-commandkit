@@ -1,12 +1,5 @@
 const gradient = require('gradient-string');
 
-
-// import #c586c0
-// export #569cd6
-
-// require #dcdcaa
-// module #4ec9b0
-
 exports.templates = {
     js: {
         esm: `${__dirname}/templates/JavaScript/esm`,
