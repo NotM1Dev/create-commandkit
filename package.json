@@ -1,7 +1,7 @@
 {
     "name": "create-commandkit",
     "description": "Start a new CommandKit project with ease.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "src/index.js",
     "bin": "src/index.js",
     "type": "commonjs",
