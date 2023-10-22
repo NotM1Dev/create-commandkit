@@ -1,7 +1,7 @@
 {
     "name": "create-commandkit",
     "description": "Start a new CommandKit project with ease.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "src/index.js",
     "bin": "src/index.js",
     "type": "commonjs",
@@ -13,8 +13,8 @@
     ],
     "dependencies": {
         "@clack/prompts": "^0.7.0",
-        "gradient-string": "^2.0.2",
+        "colors": "^1.4.0",
         "fs-extra": "^11.1.1",
-        "colors": "^1.4.0"
+        "gradient-string": "^2.0.2"
     }
 }
