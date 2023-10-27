@@ -1,4 +1,4 @@
-const { commands } = require('../config');
+const { commands } = require('../constants');
 const { execSync: ex } = require('child_process');
 
 module.exports = async ({ manager, dir, stdio = 'pipe' }) => {

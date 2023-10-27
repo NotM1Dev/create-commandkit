@@ -1,5 +1,5 @@
 const { execSync: ex } = require('child_process');
-const { commands } = require('../config');
+const { commands } = require('../constants');
 
 const fs = require('fs-extra');
 const path = require('path');

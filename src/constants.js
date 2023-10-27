@@ -1,4 +1,6 @@
 const gradient = require('gradient-string');
+const colors = require('colors');
+const fs = require('fs-extra');
 
 exports.templates = {
     js: {
@@ -36,3 +38,9 @@ exports.hints = {
 }
 
 exports.commandkit = gradient(exports.colors.commandkit)('CommandKit');
+exports.outroMsg = `
+${gradient(exports.colors.commandkit)('Thank you for choosing CommandKit!')}
+
+• Documentation: ${colors.blue('https://commandkit.js.org')}
+• Join us on Discord: ${colors.blue('https://ctrl.lol/discord')}
+`;
