@@ -21,6 +21,7 @@ const fs = require('fs-extra');
         placeholder: 'Leave blank for current directory',
         defaultValue: '.',
         validate: (value) => {
+            value = path.resolve(process.cwd(), value);
             let isEmpty;
 
             try {
