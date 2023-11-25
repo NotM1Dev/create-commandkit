@@ -1,5 +1,0 @@
-Thank you for using CommandKit!
-
-Helpful resources:
-• Documentation — https://commandkit.js.org
-• Join us on Discord — https://ctrl.lol/discord
