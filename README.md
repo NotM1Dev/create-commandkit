@@ -21,13 +21,13 @@ npm create commandkit@latest
 
 ## Setup Options
 
-- Project directory
-- Package manager (npm/pnpm/yarn)
-- Module type (ESM/CommonJS)
-- Bot token (written to .env)
+-   Project directory
+-   Package manager (npm/pnpm/yarn)
+-   Module type (ESM/CommonJS)
+-   Bot token (written to .env)
 
 ## Links
 
-- [GitHub](https://github.com/m1-dev/create-commandkit)
-- [Discord](https://ctrl.lol/discord)
-- [npm](https://npmjs.com/package/create-commandkit)
+-   [GitHub](https://github.com/m1-dev/create-commandkit)
+-   [Discord](https://ctrl.lol/discord)
+-   [npm](https://npmjs.com/package/create-commandkit)

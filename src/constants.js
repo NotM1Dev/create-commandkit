@@ -6,8 +6,8 @@ exports.templates = {
     js: {
         esm: `${__dirname}/templates/JavaScript/esm`,
         cjs: `${__dirname}/templates/JavaScript/cjs`,
-    }
-}
+    },
+};
 
 exports.colors = {
     commandkit: ['#fdba74', '#e4a5a2', '#c288de', '#b27bf9'],
@@ -16,8 +16,8 @@ exports.colors = {
     require: ['#dcdcaa', '#dcdcaa'],
     module: ['#4ec9b0', '#4ec9b0'],
     js: ['#f7e01c', '#f7e01c'],
-    ts: ['#2480c5', '#2480c5']
-}
+    ts: ['#2480c5', '#2480c5'],
+};
 
 exports.commands = {
     init: { npm: 'npm init -y', yarn: 'yarn init -y', pnpm: 'pnpm init' },
@@ -25,8 +25,8 @@ exports.commands = {
         npm: 'npm install commandkit discord.js dotenv nodemon',
         yarn: 'yarn add commandkit discord.js dotenv nodemon',
         pnpm: 'pnpm add commandkit discord.js dotenv nodemon',
-    }
-}
+    },
+};
 
 exports.hints = {
     import: gradient(exports.colors.import)('import'),
@@ -34,8 +34,8 @@ exports.hints = {
     require: gradient(exports.colors.require)('require'),
     module: gradient(exports.colors.module)('exports'),
     javascript: gradient(exports.colors.js)('JavaScript'),
-    typescript: gradient(exports.colors.ts)('TypeScript')
-}
+    typescript: gradient(exports.colors.ts)('TypeScript'),
+};
 
 exports.commandkit = gradient(exports.colors.commandkit)('CommandKit');
 exports.outroMsg = `

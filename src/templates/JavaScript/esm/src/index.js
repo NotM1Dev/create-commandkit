@@ -13,14 +13,14 @@ const client = new Client({
         IntentsBitField.Flags.Guilds,
         IntentsBitField.Flags.GuildMembers,
         IntentsBitField.Flags.GuildMessages,
-        IntentsBitField.Flags.MessageContent
-    ]
+        IntentsBitField.Flags.MessageContent,
+    ],
 });
 
 new CommandKit({
     client,
     eventsPath: `${dirname}/events`,
-    commandsPath: `${dirname}/commands`
+    commandsPath: `${dirname}/commands`,
 });
 
 client.login(process.env.TOKEN);

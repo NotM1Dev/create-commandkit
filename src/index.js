@@ -16,22 +16,27 @@ const fs = require('fs-extra');
 (async () => {
     prompts.intro(`Welcome to ${commandkit}!`);
 
-    const dir = path.resolve(process.cwd(), await prompts.text({
-        message: 'Enter a project directory:',
-        placeholder: 'Leave blank for current directory',
-        defaultValue: '.',
-        validate: (value) => {
-            value = path.resolve(process.cwd(), value);
-            let isEmpty;
+    const dir = path.resolve(
+        process.cwd(),
+        await prompts.text({
+            message: 'Enter a project directory:',
+            placeholder: 'Leave blank for current directory',
+            defaultValue: '.',
+            validate: (value) => {
+                value = path.resolve(process.cwd(), value);
+                let isEmpty;
 
-            try {
-                const contents = fs.readdirSync(value);
-                isEmpty = contents.length === 0;
-            } catch { isEmpty = true }
+                try {
+                    const contents = fs.readdirSync(value);
+                    isEmpty = contents.length === 0;
+                } catch {
+                    isEmpty = true;
+                }
 
-            return isEmpty ? undefined : 'Directory is not empty!';
-        }
-    }));
+                return isEmpty ? undefined : 'Directory is not empty!';
+            },
+        }),
+    );
 
     const manager = await prompts.select({
         message: 'Select a package manager:',
@@ -43,12 +48,12 @@ const fs = require('fs-extra');
         options: [
             { label: 'CommonJS', value: 'cjs', hint: `${hints.require} & ${hints.module}` },
             { label: 'ES Modules', value: 'esm', hint: `${hints.import} & ${hints.export}` },
-        ]
+        ],
     });
 
     const token = await prompts.password({
         message: 'Enter your bot token:',
-        mask: gray('*')
+        mask: gray('*'),
     });
 
     prompts.outro(cyan('Setup complete.'));

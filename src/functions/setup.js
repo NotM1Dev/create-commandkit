@@ -19,9 +19,9 @@ module.exports = async ({ manager, dir, token, type, stdio = 'pipe' }) => {
 
     packageJson.scripts = {
         start: 'node ./src/index.js',
-        dev: 'nodemon --ext js,json,ts ./src/index.js'
+        dev: 'nodemon --ext js,json,ts ./src/index.js',
     };
 
     await fs.writeJSON(packageJsonPath, packageJson, { spaces: 4 });
     await fs.writeFile(`${dir}/.env`, `TOKEN = ${token}`);
-}
+};
