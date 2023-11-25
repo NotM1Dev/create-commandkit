@@ -11,6 +11,10 @@
         "discord.js",
         "cli"
     ],
+    "scripts": {
+        "test": "node src/index.js",
+        "format": "prettier --write \"**/*.{js,cjs,mjs,json,md,ts,mts,cts}\""
+    },
     "dependencies": {
         "@clack/prompts": "^0.7.0",
         "colors": "^1.4.0",
