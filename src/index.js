@@ -40,7 +40,7 @@ const fs = require('fs-extra');
 
     const manager = await prompts.select({
         message: 'Select a package manager:',
-        options: [{ value: 'npm' }, { value: 'pnpm' }, { value: 'yarn' }],
+        options: [{ value: 'npm' }, { value: 'pnpm' }, { value: 'yarn' }, { value: 'bun' }],
     });
 
     const type = await prompts.select({

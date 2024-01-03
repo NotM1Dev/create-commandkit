@@ -20,11 +20,12 @@ exports.colors = {
 };
 
 exports.commands = {
-    init: { npm: 'npm init -y', yarn: 'yarn init -y', pnpm: 'pnpm init' },
+    init: { npm: 'npm init -y', yarn: 'yarn init -y', pnpm: 'pnpm init', bun: 'npm init -y' },
     install: {
         npm: 'npm install commandkit discord.js dotenv nodemon',
         yarn: 'yarn add commandkit discord.js dotenv nodemon',
         pnpm: 'pnpm add commandkit discord.js dotenv nodemon',
+        bun: 'bun add commandkit discord.js dotenv nodemon',
     },
 };
 
