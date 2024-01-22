@@ -2,7 +2,7 @@ node_modules/
 other/
 test/
 
-yarn.lock
+pnpm-lock.yaml
 .gitignore
 .DS_Store
 *.log
